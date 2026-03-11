@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineFlex | Experiencia Premium</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 1. Header -->
+    <header id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fa-solid fa-film logo-icon"></i> Cine<span>Flex</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio" class="active">Inicio</a></li>
+                    <li><a href="#cartelera">Cartelera</a></li>
+                    <li><a href="#estrenos">Estrenos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <span class="badge">NUEVA EXPERIENCIA</span>
+            <h1 class="hero-title">Cartelera de <span class="text-accent">Cine</span></h1>
+            <p class="hero-subtitle">Descubre las mejores historias en pantalla grande con la mejor tecnología visual y sonido inmersivo.</p>
+            <div class="hero-buttons">
+                <a href="#estrenos" class="btn btn-primary">Ver Estrenos <i class="fa-solid fa-fire"></i></a>
+                <a href="#cartelera" class="btn btn-outline">Cartelera Actual</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Cartelera Activa -->
+    <section id="cartelera" class="section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <h2 class="section-title">Cartelera Activa</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="movie-grid" id="cartelera-grid">
+                <!-- Se inyectan con JS o se ponen estáticos -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Carrusel de Estrenos -->
+    <section id="estrenos" class="section dark-section">
+        <div class="container">
+            <div class="section-header slide-up">
+                <h2 class="section-title">Próximos Estrenos</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="carousel-container slide-up">
+                <button class="carousel-btn prev-btn" id="prev-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="carousel-track-wrapper">
+                    <div class="carousel-track" id="carousel-track">
+                        <!-- Items inyectados o estáticos -->
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" id="next-btn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Call To Action -->
+    <section id="cta" class="cta-section">
+        <div class="cta-overlay"></div>
+        <div class="container cta-content fade-in">
+            <h2>Compra tus boletos ahora</h2>
+            <p>Asegura tu lugar en las mejores salas. Disfruta de beneficios exclusivos comprando en línea.</p>
+            <button class="btn btn-large btn-accent pulse-anim">Comprar Boletos <i class="fa-solid fa-ticket"></i></button>
+        </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-brand fade-in">
+                <div class="logo">
+                    <i class="fa-solid fa-film logo-icon"></i> Cine<span>Flex</span>
+                </div>
+                <p>Tu cine premium favorito. Vivimos la pasión por el séptimo arte ofreciendo la mejor calidad y servicio a nuestros clientes.</p>
+            </div>
+            <div class="footer-links fade-in delay-1">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#cartelera"><i class="fa-solid fa-chevron-right"></i> Cartelera</a></li>
+                    <li><a href="#estrenos"><i class="fa-solid fa-chevron-right"></i> Estrenos</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact fade-in delay-2">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><i class="fa-solid fa-location-dot"></i> Av. Principal 123, Ciudad Central</li>
+                    <li><i class="fa-solid fa-envelope"></i> hola@cineflex.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 234 567 8900</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 CineFlex. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Términos</a>
+                    <a href="#">Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 4. Modal Sinopsis y Horarios -->
+    <div id="movie-modal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-container">
+            <button class="close-modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <div class="modal-img-container">
+                    <img id="modal-img" src="" alt="Poster Movie">
+                    <div class="modal-rating"><i class="fa-solid fa-star"></i> <span id="modal-rating-val">8.5</span>/10</div>
+                </div>
+                <div class="modal-details">
+                    <span class="modal-genre" id="modal-genre">Acción, Ciencia Ficción</span>
+                    <h2 class="modal-title" id="modal-title">Título Película</h2>
+                    <div class="modal-meta">
+                        <span><i class="fa-solid fa-clock"></i> <span id="modal-duration">120 min</span></span>
+                        <span><i class="fa-solid fa-calendar-alt"></i> <span id="modal-year">2026</span></span>
+                        <span class="age-rating" id="modal-age">+12</span>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Sinopsis</h3>
+                        <p id="modal-sinopsis" class="modal-desc">Lorem ipsum...</p>
+                    </div>
+
+                    <div class="modal-section">
+                        <h3>Horarios Disponibles (Hoy)</h3>
+                        <div class="schedule-tags" id="modal-horarios">
+                            <!-- Inyectados por JS -->
+                        </div>
+                    </div>
+
+                    <div class="modal-actions">
+                        <button class="btn btn-primary w-100">Comprar Boletos AHORA <i class="fa-solid fa-ticket-simple"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
